@@ -1,0 +1,53 @@
+---
+title: "FP_pesca"
+author: "Eddy Herrera Daza"
+date: "30 de Septiembre de 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Provisión de Alimentos FP: Fisheries:FIS  
+
+Cantidad de pescados y mariscos silvestres sostenibles en comparación con el máximo sostenible (MSY)     
+
+ $ x_{FIS} =  (\prod_{g=1}^{6} SS_{i,g}^{C_{i,g}})^\frac{1}{\sum{C_{i,g}}}$  
+ 
+ $S$: puntaje de estado del stock, basado en $B/B_{MSY$ y (biomasa / Biomasa del rendimiento máximo sostenible) y un ajuste de penalización por debajo de la cosecha  
+ 
+ $C$ total captura para cada región asociada al nivel taxónomico  
+   
+  $i$ region de informe de OHI   
+  Si  $i=1$, Caribe Colombiano, $i=2$, Pacífico Colombiano
+  y si $i=3$, Insular Colombiano  
+  
+  $g$: Nivel del grupo taxonómico según el Standard Statistical Classification for Aquatic Animals and Plants (ISSCAAP).  
+  
+## Provisión de Alimentos:FP, Maricultura: MAR  
+
+Cantidad de productos pesqueros sostenibles cultivados en la granja en comparación con el máximo sostenible  
+
+$x_{MAR} =  \frac{Y_{c}}{Y_{r}}$  
+Donde:  
+$Y_{c} = \frac{\sum{1}^{k} Y_{k} * S_{M,k}}{P_{c}}$  
+$Y_{r} = max(Y_{c})$
+
+Donde:  
+$Y$: Rendimiento total actual de forma sostenible, actual [$ c $] o referencia [$ r $]  
+$ S_ {M, k} $ = puntaje de sostenibilidad para cada especie $ k $  
+$ P_ {c} $ = Población costera dentro de 100 km  
+
+## Oportunidad de pesca artesanal  
+la oportunidad de pescar artesanalmente que se obtiene, independientemente de cuántos peces se capturen  
+$x_{AO} = (1 - D_{U}) * S_{AO}$  
+
+
+
+
+
+ 
+ 
